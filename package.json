@@ -1,0 +1,14 @@
+{
+  "name": "pacman-simulator",
+  "version": "1.0.0",
+  "description": "A simple pacman simulator for IE digital",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Andrew M Antolino",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
+}
