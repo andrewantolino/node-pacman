@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A simple pacman simulator for IE digital",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewantolino/node-pacman"
+  },
   "scripts": {
     "test": "mocha"
   },
