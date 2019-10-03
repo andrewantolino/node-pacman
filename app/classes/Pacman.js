@@ -74,23 +74,31 @@ class Pacman {
   // Move by one in the direction of `this.orientation`
   move(gameboard) {
     if (this.orientation == 'NORTH') {
-      this.positionY++;
+      if ( this.checkMove(this.positionX, this.positionY + 1, gameboard) ) {
+        this.positionY++;
+      }
     }
+
     if (this.orientation == 'EAST') {
-      this.positionX++;
+      if ( this.checkMove(this.positionX + 1, this.positionY, gameboard) ) {
+        this.positionX++;
+      }
+
     }
+
     if (this.orientation == 'SOUTH') {
-      this.positionY--;
+      if ( this.checkMove(this.positionX, this.positionY - 1, gameboard) ) {
+        this.positionY--;
+      }
     }
+
     if (this.orientation == 'WEST') {
-      this.positionX--;
+      if ( this.checkMove(this.positionX - 1, this.positionY, gameboard) ) {
+        this.positionX--;
+      }
     }
 
-    if ( this.checkMove(this.positionX, this.positionY, gameboard) ) {
-      return `${this.positionX},${this.positionY},${this.orientation}`;
-    }
-
-    return console.log("Please try again");
+    return `${this.positionX},${this.positionY},${this.orientation}`;
 
   }
 

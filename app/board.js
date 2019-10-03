@@ -14,7 +14,7 @@ const pacman = new Pacman();
 // a)
 // input:
 // PLACE 0,0,NORTH
-var input = [0, 0, "NORTH"];
+const input = [0, 0, "NORTH"];
 
 gameBoard.place(...input);
 pacman.setPosition(...input);
@@ -29,7 +29,7 @@ console.log(pacman.report()); // 0,1,NORTH
 // PLACE 0,0,NORTH
 // LEFT
 // REPORT
-var input2 = [0, 0, "NORTH"];
+const input2 = [0, 0, "NORTH"];
 
 gameBoard.place(...input2);
 pacman.setPosition(...input2);
@@ -48,7 +48,7 @@ console.log(pacman.report()); // 0,0,WEST
 // MOVE
 // REPORT
 
-var input3 = [1, 2, "EAST"];
+const input3 = [1, 2, "EAST"];
 
 gameBoard.place(...input3);
 pacman.setPosition(...input3);
@@ -59,3 +59,16 @@ pacman.turn("LEFT");
 pacman.move(gameBoard);
 
 console.log(pacman.report()); // 3,3,NORTH
+
+// d) move pacman off the grid
+
+const input4 = [1, 1, "SOUTH"];
+
+gameBoard.place(...input4);
+pacman.setPosition(...input4);
+
+pacman.move(gameBoard);
+pacman.move(gameBoard);
+pacman.move(gameBoard);
+
+console.log(pacman.report());
