@@ -5,6 +5,7 @@ class GameBoard {
     this.grid = {};
   }
 
+  // Initialise the game board grid
   createGameBoard() {
     for (let i = 0; i < this.height; i++) {
       this.grid[i] = [];
@@ -29,7 +30,6 @@ class GameBoard {
     } else if (y > this.height) {
       return false;
     }
-
       return true;
   }
 
