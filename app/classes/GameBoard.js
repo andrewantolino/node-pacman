@@ -20,6 +20,7 @@ class GameBoard {
     return this.grid;
   }
 
+  // Ensure initial placement is within bounds of game board
   checkPlace(x, y) {
     if (x < 0) {
       return false;
