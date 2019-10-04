@@ -1,7 +1,7 @@
 {
   "name": "pacman-simulator",
   "version": "1.0.0",
-  "description": "A simple pacman simulator for IE digital",
+  "description": "A simple pacman simulator",
   "main": "index.js",
   "repository": {
     "type": "git",
